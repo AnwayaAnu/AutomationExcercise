@@ -18,9 +18,10 @@ public class BaseClass
 		driver = new ChromeDriver();
 		
 		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.automationexercise.com/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 		
 	}
 	
