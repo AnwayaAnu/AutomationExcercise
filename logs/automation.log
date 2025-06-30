@@ -1,7 +1,28 @@
-2025-06-29 19:58:24 INFO  TC1_SignUp:18 - Starting test execution...
-2025-06-29 19:58:24 INFO  TC1_SignUp:21 - Clicking on SignIn button
-2025-06-29 19:58:26 INFO  TC1_SignUp:26 - Validating if the signup page successfully accessed
-2025-06-29 19:58:26 INFO  TC1_SignUp:29 - Entering username and email address
-2025-06-29 19:58:27 INFO  TC1_SignUp:36 - Clicking in Sign up button...
-2025-06-29 19:58:28 INFO  TC1_SignUp:41 - Verifying access to sign up inner page..
-2025-06-29 19:58:28 INFO  TC1_SignUp:45 - Filling up the details..
+2025-06-30 18:57:23 INFO  TC1_SignUp:18 - Starting test execution...
+2025-06-30 18:57:23 INFO  TC1_SignUp:21 - Clicking on SignIn button
+2025-06-30 18:57:25 INFO  TC1_SignUp:26 - Validating if the signup page successfully accessed
+2025-06-30 18:57:25 INFO  TC1_SignUp:29 - Entering username and email address
+2025-06-30 18:57:26 INFO  TC1_SignUp:36 - Clicking in Sign up button...
+2025-06-30 18:57:28 INFO  TC1_SignUp:41 - Verifying access to sign up inner page..
+2025-06-30 18:57:28 INFO  TC1_SignUp:45 - Filling up the details..
+2025-06-30 20:22:54 INFO  TC1_SignUp:18 - Starting test execution...
+2025-06-30 20:22:54 INFO  TC1_SignUp:21 - Clicking on SignIn button
+2025-06-30 20:22:55 INFO  TC1_SignUp:26 - Validating if the signup page successfully accessed
+2025-06-30 20:22:55 INFO  TC1_SignUp:29 - Entering username and email address
+2025-06-30 20:22:56 INFO  TC1_SignUp:36 - Clicking in Sign up button...
+2025-06-30 20:22:58 INFO  TC1_SignUp:41 - Verifying access to sign up inner page..
+2025-06-30 20:22:58 INFO  TC1_SignUp:45 - Filling up the details..
+2025-06-30 20:25:13 INFO  TC1_SignUp:18 - Starting test execution...
+2025-06-30 20:25:13 INFO  TC1_SignUp:21 - Clicking on SignIn button
+2025-06-30 20:25:14 INFO  TC1_SignUp:26 - Validating if the signup page successfully accessed
+2025-06-30 20:25:14 INFO  TC1_SignUp:29 - Entering username and email address
+2025-06-30 20:25:14 INFO  TC1_SignUp:36 - Clicking in Sign up button...
+2025-06-30 20:25:14 INFO  TC1_SignUp:41 - Verifying access to sign up inner page..
+2025-06-30 20:25:15 INFO  TC1_SignUp:45 - Filling up the details..
+2025-06-30 20:26:11 INFO  TC1_SignUp:18 - Starting test execution...
+2025-06-30 20:26:11 INFO  TC1_SignUp:21 - Clicking on SignIn button
+2025-06-30 20:26:13 INFO  TC1_SignUp:26 - Validating if the signup page successfully accessed
+2025-06-30 20:26:13 INFO  TC1_SignUp:29 - Entering username and email address
+2025-06-30 20:26:13 INFO  TC1_SignUp:36 - Clicking in Sign up button...
+2025-06-30 20:26:14 INFO  TC1_SignUp:41 - Verifying access to sign up inner page..
+2025-06-30 20:26:14 INFO  TC1_SignUp:45 - Filling up the details..

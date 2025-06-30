@@ -58,6 +58,24 @@ public class TC1_SignUp extends BaseClass
 		sip.setYear("2021");
 		
 		Thread.sleep(3000);
+		String name[] = username.split(" ");
+		sip.setFirstName(name[0]);
+		sip.setLastname(name[1]);
+		
+		sip.setPassword("Test@123");
+		
+		sip.setAddress("Address1");
+		
+		sip.selectCountry("India");
+		
+		sip.setState("Kerala");
+		sip.setCity("Kozhikode");
+		sip.setZipcode("567844");
+		sip.setPhoneNo("7869590700");
+		sip.clickOnCreateAccount();
+		
+		Assert.assertEquals(sip.CheckaccountCreation(), true);
+		
 
 	}
 }
