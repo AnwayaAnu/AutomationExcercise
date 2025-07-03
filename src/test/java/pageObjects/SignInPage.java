@@ -39,6 +39,24 @@ public class SignInPage extends BasePage
 	@FindBy(xpath="//div[@class='signup-form']//h2[text()='New User Signup!']")
 	WebElement lbl_newSignUp;
 	
+
+	public void setloginuname(String uname)
+	{
+		wutils.elementTobeVisible(driver, txt_usernamelogin);
+		txt_usernamelogin.sendKeys(uname);
+	}
+	
+	public void setloginpassword(String pw)
+	{
+		wutils.elementTobeVisible(driver, txt_passwordlogin);
+		txt_passwordlogin.sendKeys(pw);
+	}
+	
+	public void clickOnLogin()
+	{
+		wutils.elementTobeVisible(driver, btn_login);
+		btn_login.click();
+	}
 	
 	public void setUserName(String uname)
 	{

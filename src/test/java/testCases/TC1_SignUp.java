@@ -2,6 +2,8 @@ package testCases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -74,7 +76,7 @@ public class TC1_SignUp extends BaseClass
 		sip.setPhoneNo("7869590700");
 		sip.clickOnCreateAccount();
 		
-		Assert.assertEquals(sip.CheckaccountCreation(), true);
+		AssertJUnit.assertEquals(sip.CheckaccountCreation(), true);
 		
 
 	}
