@@ -23,13 +23,13 @@ public class TC3_DataDrivenLogin extends BaseClass
 		
 		LandingPage lp = new LandingPage(driver);
 		
-		logger.info("Clicking on SignIn button");
+		logger.info("Clicking on Login/SignIn button");
 		lp.clickOnSignIn();
 		
 		
 		SignInPage sp = new SignInPage(driver);
 		logger.info("Validating if the signup page successfully accessed");
-		AssertJUnit.assertEquals(sp.verifySignupPage(), true);
+		Assert.assertEquals(sp.verifySignupPage(), true);
 		
 		logger.info("Entering username and email address");
 		
@@ -48,32 +48,32 @@ public class TC3_DataDrivenLogin extends BaseClass
 		{
 			if(checkSuccess==true)
 			{
-				AssertJUnit.assertTrue(true);
+				Assert.assertTrue(true);
 				hp.clickLogout();
 				
 			}
 			else
 			{
-				AssertJUnit.assertTrue(false);
+				Assert.assertTrue(false);
 			}
 		}
 		else
 		{
 			if(checkSuccess==true)
 			{
-				AssertJUnit.assertTrue(false);
+				Assert.assertTrue(false);
 				hp.clickLogout();
 			}
 			else
 			{
-				AssertJUnit.assertTrue(true);
+				Assert.assertTrue(true);
 			}
 		}
 		
 	}
 		catch(Exception e)
 		{
-			AssertJUnit.fail("An exception occured..." +e.getMessage());
+			Assert.fail("An exception occured..." +e.getMessage());
 		}
 		
 		

@@ -4,10 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import utilities.JavascriptUtility;
 import utilities.WaitUtilities;
 
 public class LandingPage extends BasePage
 {
+	JavascriptUtility jutil = new JavascriptUtility();
 	WaitUtilities wutils = new WaitUtilities();
 	
 	public LandingPage(WebDriver driver)
@@ -32,7 +34,8 @@ public class LandingPage extends BasePage
 	public void clickOnSignIn()
 	{
 		wutils.elementtobeClickable(driver, link_signup);
-		link_signup.click();
+		jutil.clickUsingJavascript(driver,link_signup);
+		//link_signup.click();
 	}
 	
 	

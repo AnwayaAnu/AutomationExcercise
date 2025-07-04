@@ -11,7 +11,7 @@ public class DataProviderUtility
 		@DataProvider(name="LoginData")
 		public String [][] getData() throws IOException
 		{
-			String path="/Users/anwaya/eclipse-workspace1/AutomationExcercise/testdata/LoginData.xlsx";//taking xl file from testData
+			String path="/Users/anwaya/eclipse-workspace1/AutomationExcercise/testdata/LoginData 2.xlsx";//taking xl file from testData
 			
 			ExcelUtility xlutil=new ExcelUtility(path);//creating an object for XLUtility
 			

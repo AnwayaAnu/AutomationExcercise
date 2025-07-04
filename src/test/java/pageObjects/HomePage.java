@@ -14,7 +14,7 @@ public class HomePage extends BasePage
 		super(driver);
 	}
 	
-	@FindBy(xpath="//ul//li//a//b[text()='Test Doe']") WebElement lbl_uname;
+	@FindBy(xpath="//ul[@class='nav navbar-nav']//li//a[text()=' Logged in as ']") WebElement lbl_uname;
 	@FindBy(xpath="//ul//li//a[text()=' Logout']") WebElement btn_logout;
 	
 	public boolean checkSuccessfullLogin()
