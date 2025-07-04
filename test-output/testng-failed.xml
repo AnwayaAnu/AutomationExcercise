@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [MasterSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="Os" value="windows"/>
+    <parameter name="Os" value="Windows"/>
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC3_DataDrivenLogin">
+      <class name="testCases.TC4_VerifyPresenceofBrokenLinks">
         <methods>
-          <include name="VerigyDatadrivenLoginFeature" invocation-numbers="0 1 2 3"/>
+          <include name="CheckBrokenLinks"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testCases.TC3_DataDrivenLogin -->
+      </class> <!-- testCases.TC4_VerifyPresenceofBrokenLinks -->
     </classes>
   </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+</suite> <!-- Failed suite [MasterSuite] -->

@@ -107,3 +107,18 @@
 2025-07-04 19:47:03 INFO  TC3_DataDrivenLogin:39 - Clicking on login button
 2025-07-04 19:47:05 INFO  TC3_DataDrivenLogin:42 - Verifying if the user successfully logged in
 2025-07-04 19:47:07 INFO  TC3_DataDrivenLogin:80 - Finishing execution....
+2025-07-04 21:39:22 INFO  TC4_VerifyPresenceofBrokenLinks:18 - Starting test execution...
+2025-07-04 21:39:22 INFO  TC4_VerifyPresenceofBrokenLinks:21 - Clicking on SignIn button
+2025-07-04 21:39:24 INFO  TC4_VerifyPresenceofBrokenLinks:26 - Validating if the signup page successfully accessed
+2025-07-04 21:39:24 INFO  TC4_VerifyPresenceofBrokenLinks:29 - Entering username and email address
+2025-07-04 21:39:25 INFO  TC4_VerifyPresenceofBrokenLinks:34 - Clicking on login button
+2025-07-04 21:39:25 INFO  TC4_VerifyPresenceofBrokenLinks:38 - Verifying if the user successfully logged in
+2025-07-04 21:39:32 INFO  TC4_VerifyPresenceofBrokenLinks:42 - Checking if the links are broken or not
+2025-07-04 21:41:48 INFO  TC4_VerifyPresenceofBrokenLinks:18 - Starting test execution...
+2025-07-04 21:41:48 INFO  TC4_VerifyPresenceofBrokenLinks:21 - Clicking on SignIn button
+2025-07-04 21:41:50 INFO  TC4_VerifyPresenceofBrokenLinks:26 - Validating if the signup page successfully accessed
+2025-07-04 21:41:50 INFO  TC4_VerifyPresenceofBrokenLinks:29 - Entering username and email address
+2025-07-04 21:41:51 INFO  TC4_VerifyPresenceofBrokenLinks:34 - Clicking on login button
+2025-07-04 21:41:54 INFO  TC4_VerifyPresenceofBrokenLinks:38 - Verifying if the user successfully logged in
+2025-07-04 21:41:54 INFO  TC4_VerifyPresenceofBrokenLinks:42 - Checking if the links are broken or not
+2025-07-04 21:43:25 INFO  TC4_VerifyPresenceofBrokenLinks:47 - Execution finishing....

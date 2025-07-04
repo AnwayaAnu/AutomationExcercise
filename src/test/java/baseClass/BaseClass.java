@@ -37,7 +37,7 @@ public class BaseClass
 	public static WebDriver driver;
 	public Logger logger;
 	public Properties p;
-	@BeforeMethod
+
 	@BeforeClass
 	@Parameters({"Os","Browser"})
 	public void setUp(String os, String br) throws IOException
@@ -99,7 +99,7 @@ public class BaseClass
 	}
 	
 	
-	@AfterMethod
+	
 	@AfterClass
 	public void tearDown()
 	{

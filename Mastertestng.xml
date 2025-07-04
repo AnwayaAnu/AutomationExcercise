@@ -11,7 +11,7 @@
   <parameter name = "Browser" value = "chrome"/>
   
     <classes>
-      <class name="testCases.TC2_LoginTest"/>
+      <class name="testCases.TC4_VerifyPresenceofBrokenLinks"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

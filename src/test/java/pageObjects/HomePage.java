@@ -1,5 +1,11 @@
 package pageObjects;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URI;
+import java.net.URL;
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,6 +22,7 @@ public class HomePage extends BasePage
 	
 	@FindBy(xpath="//ul[@class='nav navbar-nav']//li//a[text()=' Logged in as ']") WebElement lbl_uname;
 	@FindBy(xpath="//ul//li//a[text()=' Logout']") WebElement btn_logout;
+	@FindBy(tagName="a") List<WebElement> links;
 	
 	public boolean checkSuccessfullLogin()
 	{
@@ -26,5 +33,41 @@ public class HomePage extends BasePage
 	{
 		wutils.elementTobeVisible(driver, btn_logout);
 		btn_logout.click();
+	}
+	
+	public int ReturnBrokenLinks() throws IOException
+	{
+		int count = 0;
+		for(WebElement link:links)
+		{
+			String urlText = link.getDomProperty("href");
+			
+			if(urlText==null || urlText.isEmpty())
+			{
+				System.out.println("The url is empty or null");
+			}
+			else
+			{
+				URI uri = URI.create(urlText);
+				URL url = uri.toURL();
+				
+				HttpURLConnection hcon = (HttpURLConnection) url.openConnection();
+				hcon.connect();
+				
+				if(hcon.getResponseCode()>400)
+				{
+					System.out.println("Broken URL");
+					count++;
+				}
+				else
+				{
+					System.out.println("Valid links..");
+				}
+			}
+			
+			
+			
+		}
+		return count;
 	}
 }

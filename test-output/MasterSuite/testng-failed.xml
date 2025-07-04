@@ -5,13 +5,13 @@
     <parameter name="Os" value="Windows"/>
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC1_SignUp">
+      <class name="testCases.TC4_VerifyPresenceofBrokenLinks">
         <methods>
+          <include name="CheckBrokenLinks"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="VarifySignup"/>
         </methods>
-      </class> <!-- testCases.TC1_SignUp -->
+      </class> <!-- testCases.TC4_VerifyPresenceofBrokenLinks -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [MasterSuite] -->
