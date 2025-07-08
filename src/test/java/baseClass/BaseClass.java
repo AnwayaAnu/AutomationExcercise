@@ -4,6 +4,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import java.io.File;
@@ -38,7 +40,8 @@ public class BaseClass
 	public Logger logger;
 	public Properties p;
 
-	@BeforeClass
+	
+	@BeforeClass(groups="sanity")
 	@Parameters({"Os","Browser"})
 	public void setUp(String os, String br) throws IOException
 	{
@@ -100,7 +103,8 @@ public class BaseClass
 	
 	
 	
-	@AfterClass
+
+	@AfterClass(groups="sanity")
 	public void tearDown()
 	{
 		driver.quit();

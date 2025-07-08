@@ -4,6 +4,8 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,7 +16,7 @@ import pageObjects.SignupInnerPage;
 
 public class TC1_SignUp extends BaseClass
 {
-	@Test
+	@Test(groups = {"Regression", "Master"})
 	public void VarifySignup() throws InterruptedException
 	{
 		logger.info("Starting test execution...");

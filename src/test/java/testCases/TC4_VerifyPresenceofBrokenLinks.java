@@ -1,5 +1,7 @@
 package testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.AssertJUnit;
@@ -12,7 +14,7 @@ import pageObjects.SignInPage;
 
 public class TC4_VerifyPresenceofBrokenLinks extends BaseClass
 {
-	@Test
+	@Test(groups = {"regression","sanity"})
 	public void CheckBrokenLinks() throws IOException
 	{
 		logger.info("Starting test execution...");

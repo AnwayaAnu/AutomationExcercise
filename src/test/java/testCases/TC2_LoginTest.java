@@ -2,6 +2,8 @@ package testCases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -13,7 +15,7 @@ import pageObjects.SignInPage;
 
 public class TC2_LoginTest extends BaseClass
 {
-	@Test
+	@Test(groups = "sanity")
 	public void VerigyLoginFeature()
 	{
 		logger.info("Starting test execution...");

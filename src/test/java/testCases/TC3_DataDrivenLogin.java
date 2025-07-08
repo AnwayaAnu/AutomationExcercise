@@ -2,6 +2,8 @@ package testCases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -14,7 +16,7 @@ import utilities.DataProviderUtility;
 
 public class TC3_DataDrivenLogin extends BaseClass
 {
-	@Test(dataProvider="LoginData", dataProviderClass=DataProviderUtility.class)
+	@Test(dataProvider="LoginData", dataProviderClass=DataProviderUtility.class, groups="datadriven")
 	public void VerigyDatadrivenLoginFeature(String username, String password, String res)
 	{
 		logger.info("Starting test execution...");
@@ -29,7 +31,7 @@ public class TC3_DataDrivenLogin extends BaseClass
 		
 		SignInPage sp = new SignInPage(driver);
 		logger.info("Validating if the signup page successfully accessed");
-		Assert.assertEquals(sp.verifySignupPage(), true);
+		AssertJUnit.assertEquals(sp.verifySignupPage(), true);
 		
 		logger.info("Entering username and email address");
 		
@@ -48,32 +50,32 @@ public class TC3_DataDrivenLogin extends BaseClass
 		{
 			if(checkSuccess==true)
 			{
-				Assert.assertTrue(true);
+				AssertJUnit.assertTrue(true);
 				hp.clickLogout();
 				
 			}
 			else
 			{
-				Assert.assertTrue(false);
+				AssertJUnit.assertTrue(false);
 			}
 		}
 		else
 		{
 			if(checkSuccess==true)
 			{
-				Assert.assertTrue(false);
+				AssertJUnit.assertTrue(false);
 				hp.clickLogout();
 			}
 			else
 			{
-				Assert.assertTrue(true);
+				AssertJUnit.assertTrue(true);
 			}
 		}
 		
 	}
 		catch(Exception e)
 		{
-			Assert.fail("An exception occured..." +e.getMessage());
+			AssertJUnit.fail("An exception occured..." +e.getMessage());
 		}
 		
 		

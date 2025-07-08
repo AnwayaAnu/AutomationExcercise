@@ -23,6 +23,30 @@ public class HomePage extends BasePage
 	@FindBy(xpath="//ul[@class='nav navbar-nav']//li//a[text()=' Logged in as ']") WebElement lbl_uname;
 	@FindBy(xpath="//ul//li//a[text()=' Logout']") WebElement btn_logout;
 	@FindBy(tagName="a") List<WebElement> links;
+	@FindBy(id="search_product") WebElement txt_search;
+	@FindBy(id="submit_search") WebElement btn_search;
+	@FindBy(xpath="//ul[@class='nav nav-pills nav-justified']/li//a[text()='View Product']") WebElement btnView;
+	
+	
+	
+	public void clickOnViewProduct()
+	{
+		wutils.elementtobeClickable(driver, btnView);
+		btnView.click();
+	}
+	
+	
+	
+	public void setSearchKeyword(String skeyword)
+	{
+		txt_search.sendKeys(skeyword);
+	}
+	
+	public void clickOnSearchButton()
+	{
+		wutils.elementtobeClickable(driver, btn_search);
+		btn_search.click();
+	}
 	
 	public boolean checkSuccessfullLogin()
 	{

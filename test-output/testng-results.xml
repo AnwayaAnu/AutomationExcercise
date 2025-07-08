@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-04T21:41:39 IST" name="MasterSuite" finished-at="2025-07-04T21:43:26 IST" duration-ms="106247">
+  <suite started-at="2025-07-08T16:56:40 IST" name="Suite" finished-at="2025-07-08T16:59:48 IST" duration-ms="187890">
     <groups>
+      <group name="regression">
+        <method signature="TC4_VerifyPresenceofBrokenLinks.CheckBrokenLinks()[pri:0, instance:testCases.TC4_VerifyPresenceofBrokenLinks@2f4948e4]" name="CheckBrokenLinks" class="testCases.TC4_VerifyPresenceofBrokenLinks"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TC2_LoginTest.VerigyLoginFeature()[pri:0, instance:testCases.TC2_LoginTest@7dcf94f8]" name="VerigyLoginFeature" class="testCases.TC2_LoginTest"/>
+        <method signature="TC4_VerifyPresenceofBrokenLinks.CheckBrokenLinks()[pri:0, instance:testCases.TC4_VerifyPresenceofBrokenLinks@2f4948e4]" name="CheckBrokenLinks" class="testCases.TC4_VerifyPresenceofBrokenLinks"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-07-04T21:41:39 IST" name="Test" finished-at="2025-07-04T21:43:26 IST" duration-ms="106247">
+    <test started-at="2025-07-08T16:56:40 IST" name="Test" finished-at="2025-07-08T16:59:48 IST" duration-ms="187890">
       <class name="testCases.TC4_VerifyPresenceofBrokenLinks">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC4_VerifyPresenceofBrokenLinks@40a4337a]" started-at="2025-07-04T21:41:39 IST" name="setUp" finished-at="2025-07-04T21:41:48 IST" duration-ms="8832" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC4_VerifyPresenceofBrokenLinks@2f4948e4]" started-at="2025-07-08T16:56:40 IST" name="setUp" finished-at="2025-07-08T16:57:05 IST" duration-ms="25339" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +30,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CheckBrokenLinks()[pri:0, instance:testCases.TC4_VerifyPresenceofBrokenLinks@40a4337a]" started-at="2025-07-04T21:41:48 IST" name="CheckBrokenLinks" finished-at="2025-07-04T21:43:25 IST" duration-ms="96816" status="PASS">
+        <test-method signature="CheckBrokenLinks()[pri:0, instance:testCases.TC4_VerifyPresenceofBrokenLinks@2f4948e4]" started-at="2025-07-08T16:57:05 IST" name="CheckBrokenLinks" finished-at="2025-07-08T16:59:08 IST" duration-ms="123330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckBrokenLinks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC4_VerifyPresenceofBrokenLinks@40a4337a]" started-at="2025-07-04T21:43:25 IST" name="tearDown" finished-at="2025-07-04T21:43:26 IST" duration-ms="544" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC4_VerifyPresenceofBrokenLinks@2f4948e4]" started-at="2025-07-08T16:59:08 IST" name="tearDown" finished-at="2025-07-08T16:59:09 IST" duration-ms="611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC4_VerifyPresenceofBrokenLinks -->
+      <class name="testCases.TC2_LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC2_LoginTest@7dcf94f8]" started-at="2025-07-08T16:59:09 IST" name="setUp" finished-at="2025-07-08T16:59:23 IST" duration-ms="13683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerigyLoginFeature()[pri:0, instance:testCases.TC2_LoginTest@7dcf94f8]" started-at="2025-07-08T16:59:23 IST" name="VerigyLoginFeature" finished-at="2025-07-08T16:59:47 IST" duration-ms="24338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerigyLoginFeature -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC2_LoginTest@7dcf94f8]" started-at="2025-07-08T16:59:47 IST" name="tearDown" finished-at="2025-07-08T16:59:48 IST" duration-ms="476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC2_LoginTest -->
     </test> <!-- Test -->
-  </suite> <!-- MasterSuite -->
+  </suite> <!-- Suite -->
 </testng-results>
